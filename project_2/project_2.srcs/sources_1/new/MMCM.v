@@ -22,8 +22,7 @@
 
 
 module MMCM(
-    input clk_in
-    input clr
+    input clk_in,
     output clk_out
     );
     
