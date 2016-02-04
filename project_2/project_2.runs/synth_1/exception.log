@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\tucker3896\Documents\ECE 3829\ECE_3829_C16\project_2\project_2.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

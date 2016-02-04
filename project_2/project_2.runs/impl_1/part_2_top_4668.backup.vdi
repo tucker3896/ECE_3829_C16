@@ -1,0 +1,132 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Feb 04 16:55:25 2016
+# Process ID: 4668
+# Current directory: C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.runs/impl_1
+# Command line: vivado.exe -log part_2_top.vdi -applog -messageDb vivado.pb -mode batch -source part_2_top.tcl -notrace
+# Log file: C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.runs/impl_1/part_2_top.vdi
+# Journal file: C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source part_2_top.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/tucker3896/Documents/ECE 3829/ECE_3829_C16/project_2/project_2.srcs/constrs_2/new/seven_seg_top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 436.598 ; gain = 5.230

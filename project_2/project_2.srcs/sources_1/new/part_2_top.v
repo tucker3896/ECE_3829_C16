@@ -31,12 +31,18 @@ module part_2_top(
     );
     
     wire [7:0] als_val;
+    wire [7:0] count;
     wire clk_25MHz;
     wire clk_10MHz;
     wire clk_1KHz;
+    wire clk_2Hz;
     
-    MMCM mmcm(.clk(clk), .clk_25MHz(clk_25MHz), .clk_10MHz(clk_10MHz), .clk_1KHz(clk_1KHz));
-    seven_seg_top sst1(.clk(clk_1KHz), .sw({16'b0001_0010_0011_0100}), .an(an), .seg(seg));
-    spi_als sa1(.clk_10MHz(clk_10MHz), .reset(0), .en(clk_1KHz), .MISO(MISO), .CS(CS), .disp(als_val));
+    assign SCLK = clk_10MHz;
+    //assign CS = clk_1KHz;
+    
+    MMCM mmcm(.clk(clk), .clk_25MHz(clk_25MHz), .clk_10MHz(clk_10MHz), .clk_1KHz(clk_1KHz), .clk_2Hz(clk_2Hz));
+    seven_seg_top sst1(.clk(clk_1Hz), .sw({count, rst, als_val}), .an(an), .seg(seg));
+    spi_als sa1(.clk_10MHz(clk_10MHz), .reset(rst), .en(clk_1KHz), .MISO(MISO), .CS(CS), .disp(als_val));
+    //counter_100 c1(
     
 endmodule

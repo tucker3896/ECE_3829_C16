@@ -35,9 +35,13 @@ module part_1_top(
     wire clk_25MHz;
     wire clk_10MHz;
     wire clk_1KHz;
+    wire clk_2Hz;
+    reg [10:0] hcount;
+    reg [10:0] vcount;
     
-    MMCM mmcm(.clk(clk), .clk_25MHz(clk_25MHz), .clk_10MHz(clk_10MHz), .clk_1KHz(clk_1KHz));
-    vga_controller_640_60 vgac1(.pixel_clk(clk_25MHz), .VS(Vsync), .HS(Hsync));
+    
+    MMCM mmcm(.clk(clk), .clk_25MHz(clk_25MHz), .clk_10MHz(clk_10MHz), .clk_1KHz(clk_1KHz), .clk_2Hz(clk_2Hz));
+    vga_controller_640_60 vgac1(.pixel_clk(clk_25MHz), .VS(Vsync), .HS(Hsync), .hcount(hcount), .vcount(vcount));
     color_logic cl1(.sw(sw), .vgaRed(vgaRed), .vgaBlue(vgaBlue), .vgaGreen(vgaGreen));
     
     

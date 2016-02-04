@@ -29,7 +29,7 @@ module spi_als(
     output reg [7:0] disp
     );
     
-    wire clk_1MHz;
+    reg clk_1MHz;
     reg [3:0] counter_10;
     reg [4:0] counter_16;
     reg [15:0] shift_reg;
@@ -37,34 +37,45 @@ module spi_als(
     
     always @ (posedge clk_10MHz)
     begin
-        if(counter_10 == 4'b1001)
-            counter_10 <= counter_10 + 1'b1;
+        if(counter_10 == 4'H9)
+            begin
+                counter_10 <= 4'H0;
+                clk_1MHz = 1'b1;
+            end
         else
-            counter_10 <= 4'b0000;
-        
+            begin
+                counter_10 <= counter_10 + 1'b1;
+                clk_1MHz = 1'b0;
+            end
     end
     
-    assign clk_1MHz = (counter_10 > 4);
-    
-    always @ (posedge clk_1MHz, posedge reset)
+    always @ (posedge clk_10MHz, posedge reset)
     begin
         if(reset)
             counter_16 <= 0;
-        else if(en == 1 && counter_16 == 0)
+        else if(clk_1MHz == 1'b1)
             begin
-            counter_16 <= 1;
-            CS <= 0;
-            end
-        else if(counter_16 == 15)
-            begin
-            counter_16 <= 0;
-            CS <= 1;
-            end
-        else if(counter_16 > 0)
-            begin
-            counter_16 <= counter_16 + 1'b1;
-            shift_reg <= {shift_reg[14:0], MISO};
-            disp <= shift_reg[11:4];    
+                if(en == 1 && counter_16 == 0)
+                    begin
+                        counter_16 <= 1;
+                        CS = 1'b0;
+                    end
+                else if(counter_16 == 15)
+                    begin
+                        counter_16 <= 0;
+                        CS = 1'b1;
+                        disp <= shift_reg[11:4];    
+                    end
+                else if(counter_16 > 0)
+                    begin
+                        counter_16 <= counter_16 + 1'b1;
+                        shift_reg <= {shift_reg[14:0], MISO};
+                        CS = 1'b0;
+                    end
+                else
+                    begin
+                        counter_16 <= 4'H0;
+                    end
             end
     end;
     

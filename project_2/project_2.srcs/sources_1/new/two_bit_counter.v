@@ -27,42 +27,19 @@ module two_bit_counter(
     input en,
     output reg [1:0] out
     );
-    
-    
-//    always @ (en)
-//    if(en)
-//        always @ (posedge clk)
-//        begin
-//            case({sync_reset, out})
-//                3'b000: out <= 2'b01;
-//                3'b001: out <= 2'b10;
-//                3'b010: out <= 2'b11;
-//                default: out <= 2'b00;
-//            endcase
-//        end
-        
-//        always @ (posedge async_reset)
-//        begin
-//            out = 2'b00;
-//        end
-
 
     always @ (posedge clk)
         begin
-            if(en)
-                case({sync_reset, out})
-                    3'b000: out <= 2'b01;
-                    3'b001: out <= 2'b10;
-                    3'b010: out <= 2'b11;
+            if(sync_reset == 1'b1)
+                out <= 1'b0;
+            else if(en)
+                case(out)
+                    2'b00: out <= 2'b01;
+                    2'b01: out <= 2'b10;
+                    2'b10: out <= 2'b11;
                     default: out <= 2'b00;
                 endcase
+             
         end
-        
-//    always @ (posedge async_reset)
-//        begin
-//            if(en)
-//                out = 2'b00;
-//        end
-
     
 endmodule
