@@ -1,13 +1,14 @@
-
-*** Running vivado
-    with args -log part_1_top.vds -m64 -mode batch -messageDb vivado.pb -notrace -source part_1_top.tcl
-
-
-****** Vivado v2015.4 (64-bit)
-  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
-  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Feb 03 19:03:04 2016
+# Process ID: 3220
+# Current directory: C:/Users/Nick/Documents/WPI/C16/ECE3829/Labs/ECE_3829_C16/project_2/project_2.runs/synth_1
+# Command line: vivado.exe -log part_1_top.vds -mode batch -messageDb vivado.pb -notrace -source part_1_top.tcl
+# Log file: C:/Users/Nick/Documents/WPI/C16/ECE3829/Labs/ECE_3829_C16/project_2/project_2.runs/synth_1/part_1_top.vds
+# Journal file: C:/Users/Nick/Documents/WPI/C16/ECE3829/Labs/ECE_3829_C16/project_2/project_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
 source part_1_top.tcl -notrace
 Command: synth_design -top part_1_top -part xc7a35tcpg236-1
 Starting synth_design
