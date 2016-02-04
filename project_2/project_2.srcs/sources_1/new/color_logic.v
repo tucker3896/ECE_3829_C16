@@ -27,7 +27,6 @@ module color_logic(
     output reg [3:0] vgaBlue,
     output reg [3:0] vgaGreen 
     );
-    
     always @ (sw)
     begin
         vgaRed = (sw == 2'b00) ? 4'b1111 : 4'b0000;

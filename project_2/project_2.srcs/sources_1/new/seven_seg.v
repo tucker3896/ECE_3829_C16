@@ -39,10 +39,10 @@ module seven_seg(
         d; 
     
     
-    assign an = (mux == 2'b00) ? 4'b0001 :
-        (mux == 2'b01) ? 4'b0010 :
-        (mux == 2'b10) ? 4'b0100 :
-        4'b1000;
+    assign an = (mux == 2'b00) ? 4'b1110 :
+        (mux == 2'b01) ? 4'b1101 :
+        (mux == 2'b10) ? 4'b1011 :
+        4'b0111;
     
     
     //7-segment LED equivalents to all hexadecimal digits.

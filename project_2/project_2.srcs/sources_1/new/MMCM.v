@@ -25,15 +25,18 @@ module MMCM(
     input clk,
     output clk_25MHz,
     output clk_10MHz,
-    output clk_100KHz
+    output clk_1KHz,
+    output clk_2Hz
     );
     
     // This counter counts to 4, making a 25MHz signal
     reg [1:0] count_4;
     // This counter counts to 10, making a 10Mhz signal
-    reg [4:0] count_10;
-    // This counter counts to 1000, making a 100KHz signal
-    reg [9:0] count_1000;
+    reg [3:0] count_10;
+    // This counter counts to 100000, making a 1KHz signal
+    reg [16:0] count_100K;
+    // This counter counts to 50000000, making a 2Hz signal
+    reg [26:0] count_50M;
     
     always @ (posedge clk)
     begin
@@ -47,15 +50,21 @@ module MMCM(
         else
             count_10 <= count_10 + 1'b1;
         
-        if(count_1000 == 999)
-            count_1000 <= 10'b0000000000;
+        if(count_100K == 99999)
+            count_100K <= 0;
         else
-            count_1000 <= count_1000 + 1'b1;
+            count_100K <= count_100K + 1'b1;
+            
+        if(count_50M == 49999999)
+            count_50M <= 0;
+        else
+            count_50M <= count_50M + 1'b1;
     end
     
     assign clk_25MHz = (count_4 > 1);
-    assign clk_10MHz = (count_10 > 4);
-    assign clk_100KHz = (count_1000 > 499);
+    assign clk_10MHz = (count_10 == 9);
+    assign clk_1KHz = (count_100K > 49999);
+    assign clk_2Hz = (count_50M == 49999999);
        
 
     

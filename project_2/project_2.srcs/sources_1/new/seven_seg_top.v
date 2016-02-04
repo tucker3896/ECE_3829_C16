@@ -26,8 +26,18 @@ module seven_seg_top(
     output [3:0] an,
     output [7:0] seg
     );
-    
     wire [1:0] cnt;
+    
+//    wire clk_25MHz;
+//    wire clk_10MHz;
+//    wire clk_1KHz;
+        
+//    MMCM mmcm(.clk(clk), .clk_25MHz(clk_25MHz), .clk_10MHz(clk_10MHz), .clk_1KHz(clk_1KHz));
+    
+    
+    
+    
+
     two_bit_counter tbc1(.clk(clk), .async_reset(0), .sync_reset(0), .en(1), .out(cnt));
     seven_seg ss1 (.a(sw[3:0]), .b(sw[7:4]), .c(sw[11:8]), .d(sw[15:12]), .mux(cnt), .seg(seg), .an(an));
     
