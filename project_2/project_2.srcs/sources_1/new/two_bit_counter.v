@@ -1,7 +1,8 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company:  ECE3829
+// Engineer: Nicholas Rowles
+//           Tucker Martin
 // 
 // Create Date: 01/21/2016 06:33:34 PM
 // Design Name: 

@@ -1,0 +1,64 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Fri Feb 05 00:33:38 2016
+| Host         : DESKTOP-3RI855O running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file part_2_top_control_sets_placed.rpt
+| Design       : part_2_top
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    11 |
+| Minimum Number of register sites lost to control set restrictions |    48 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            4 |
+| No           | No                    | Yes                    |               8 |            4 |
+| No           | Yes                   | No                     |              46 |           12 |
+| Yes          | No                    | No                     |              17 |            5 |
+| Yes          | No                    | Yes                    |               4 |            1 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+-------------------------+-----------------------------+------------------+----------------+
+|         Clock Signal         |      Enable Signal      |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++------------------------------+-------------------------+-----------------------------+------------------+----------------+
+|  mmcm/SCLK_OBUF              |                         |                             |                1 |              1 |
+|  instance_name/inst/clk_out1 |                         |                             |                2 |              2 |
+|  mmcm/clk_1KHz               |                         |                             |                1 |              2 |
+|  instance_name/inst/clk_out1 |                         | mmcm/count_10[3]_i_1_n_0    |                1 |              4 |
+|  mmcm/clk_2Hz                |                         | rst_IBUF                    |                2 |              4 |
+|  mmcm/clk_2Hz                | c1/count_10s[3]_i_1_n_0 | rst_IBUF                    |                1 |              4 |
+|  mmcm/SCLK_OBUF              |                         | rst_IBUF                    |                2 |              4 |
+|  mmcm/SCLK_OBUF              | sa1/disp[7]_i_1_n_0     |                             |                2 |              8 |
+|  mmcm/SCLK_OBUF              | sa1/shift_reg_0         |                             |                4 |             10 |
+|  instance_name/inst/clk_out1 |                         | mmcm/count_100K[16]_i_1_n_0 |                4 |             16 |
+|  instance_name/inst/clk_out1 |                         | mmcm/count_50M[26]_i_1_n_0  |                7 |             26 |
++------------------------------+-------------------------+-----------------------------+------------------+----------------+
+
+

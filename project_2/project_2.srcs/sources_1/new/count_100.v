@@ -1,7 +1,8 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company:  ECE3829
+// Engineer: Nicholas Rowles
+//           Tucker Martin
 // 
 // Create Date: 02/03/2016 11:19:58 PM
 // Design Name: 
@@ -36,19 +37,20 @@ module counter_100(
             count_10s <= 0;
             end
         else if(en == 1'b1)
+        begin
             if(count_1s == 9 && count_10s == 9)
                 begin
                 count_1s <= 0;
                 count_10s <= 0;
                 end
+            else  if(count_1s == 9)
+                begin
+                count_1s <= 0;
+                count_10s <= count_10s + 1'b1;
+                end
             else
-                if(count_1s == 9)
-                    begin
-                    count_1s <= 0;
-                    count_10s <= count_10s + 1'b1;
-                    end
-                else
-                    count_1s <= count_1s + 1'b1;
+                count_1s <= count_1s + 1'b1;
+        end
     end
     
     
